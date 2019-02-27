@@ -1,0 +1,17 @@
+query FindRepository($first: Int,$owner:String!,$name:String!){
+  repository(owner: $owner, name: $name) {
+      name,
+      description,
+      releases(first: $first) {
+          edges {
+               node {
+                   name,
+                   description,
+                   author {
+                    name
+                   }
+               }
+          }
+      }
+  }
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RepoTestApp</string>
+    <string name="repository_name">Repository name</string>
+    <string name="repository_releases">Releases:</string>
+    <string name="owner_name_hint">Repository owner</string>
+    <string name="repository_name_hint">Repository name</string>
+    <string name="load_repository_button">Get repository details</string>
+</resources>
