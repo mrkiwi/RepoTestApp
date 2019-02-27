@@ -6,6 +6,7 @@ import com.test.repo.ui.base.mvp.MvpView;
 public interface StartView extends MvpView<StartPresenter> {
 	void loadRepository(RepositoryModel repositoryModel);
 	void showError();
+	void showAuthTokenError();
 	void showProgress();
 	void hideProgress();
 }

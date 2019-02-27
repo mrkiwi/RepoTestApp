@@ -49,6 +49,12 @@ public class StartActivity extends BaseActivity<StartPresenter> implements Start
 	}
 
 	@Override
+	public void showAuthTokenError() {
+		hideProgress();
+		showMessage("Invalid auth token");
+	}
+
+	@Override
 	public void showProgress() {
 		llProgressHolder.setVisibility(View.VISIBLE);
 	}

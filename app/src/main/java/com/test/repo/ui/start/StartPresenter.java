@@ -21,7 +21,7 @@ public class StartPresenter extends BasePresenter<StartView> {
 	public void validate(String name, String owner) {
 		getView().showProgress();
 		if(Constants.AUTH_TOKEN.equals("")) {
-			getView().showMessage("Invalid auth token");
+			getView().showAuthTokenError();
 			return;
 		}
 		if(name.isEmpty() || owner.isEmpty()) {
